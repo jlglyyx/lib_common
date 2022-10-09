@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:paddingHorizontal="@dimen/dp_10"
+    android:layout_height="@dimen/dp_30">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="@dimen/dp_25"
+        android:layout_height="@dimen/dp_25"
+        app:shapeAppearanceOverlay="@style/circleShapeImage"
+        android:id="@+id/siv_img"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/dp_10"
+        />
+
+</LinearLayout>

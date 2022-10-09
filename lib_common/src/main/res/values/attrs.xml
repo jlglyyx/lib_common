@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CommonToolBar">
+        <attr name="centerContent" format="string"/>
+        <attr name="leftContent" format="string"/>
+        <attr name="leftImgVisible" format="boolean"/>
+        <attr name="leftImgSrc" format="reference"/>
+        <attr name="rightContent" format="string"/>
+        <attr name="rightImgVisible" format="boolean"/>
+        <attr name="rightImgSrc" format="reference"/>
+        <attr name="rightContentVisible" format="boolean"/>
+        <attr name="toolbarBg" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="ItemContentView">
+        <attr name="itemLeftContent" format="string"/>
+        <attr name="itemLeftImgVisible" format="boolean"/>
+        <attr name="itemLeftImgSrc" format="reference"/>
+        <attr name="itemRightContent" format="string"/>
+        <attr name="itemRightImgVisible" format="boolean"/>
+        <attr name="itemRightImgSrc" format="reference"/>
+        <attr name="itemRightContentVisible" format="boolean"/>
+        <attr name="itemBg" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="ItemInputView">
+        <attr name="leftTitle" format="string"/>
+        <attr name="itv_minLines" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="ImageScrollView">
+        <attr name="speed" format="float"/>
+        <attr name="scrollType" format="enum">
+            <enum name="loop" value="2"/>
+            <enum name="normal" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="GridNinePictureView">
+        <attr name="spanCount" format="integer"/>
+        <attr name="maxChild" format="integer"/>
+    </declare-styleable>
+</resources>

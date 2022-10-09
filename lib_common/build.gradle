@@ -1,0 +1,71 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    buildFeatures {
+        viewBinding true
+    }
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        resConfigs "zh"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation"  : "$projectDir/schemas".toString(),
+                             "room.incremental"     : "true",
+                             "room.expandProjection": "true",
+                             "AROUTER_MODULE_NAME"  : project.getName()]
+                //includeCompileClasspath = false
+            }
+        }
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+
+        ndk{
+            abiFilters  "armeabi-v7a","arm64-v8a"
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    api fileTree(dir: "libs", include: ["*.jar"])
+    rootProject.ext.androidx.each { k, v -> api v }
+    rootProject.ext.apiDependencies.each { k, v -> api v }
+    rootProject.ext.kaptDependencies.each { k, v -> kapt v }
+    rootProject.ext.compileOnlyDependencies.each { k, v -> compileOnly v }
+    rootProject.ext.debugImplementationDependencies.each { k, v -> debugImplementation v }
+    rootProject.ext.testImplementationDependencies.each { k, v -> testImplementation v }
+    rootProject.ext.testImplementationDependencies.each { k, v -> testImplementation v }
+
+    rootProject.ext.apiProjectDependencies.each { k, v -> api project(path: v) }
+
+
+}
+

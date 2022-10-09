@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">SHelp</string>
+    <string name="string_input_account">请输入账号</string>
+    <string name="string_input_password">请输入密码</string>
+    <string name="string_confirm_password">请确认密码</string>
+    <string name="string_password_no_match">两次密码不一致</string>
+    <string name="string_verification_code">验证码</string>
+    <string name="string_re_get_verification_code">重新获取验证码</string>
+    <string name="string_get_verification_code">获取验证码</string>
+    <string name="string_password_must_six">密码长度最少六位</string>
+    <string name="string_register">注册</string>
+    <string name="string_login_now">已有账号，立即登录</string>
+    <string name="string_register_text">注：密码最少六位\n非手机号注册可不获取验证码\n但是绑定手机可随时找回密码！</string>
+    <string name="string_login">登录</string>
+    <string name="string_no_login">暂不登录</string>
+    <string name="string_register_now">没有账号?立即注册</string>
+    <string name="string_more_function">更多功能</string>
+    <string name="string_login_account_password">账号密码登录</string>
+    <string name="string_login_verification_code">验证码登录</string>
+    <string name="string_register_content">未注册号码将自动注册</string>
+    <string name="string_get_verification">获取验证码</string>
+    <string name="string_service_agreement">已阅读并同意服务协议和隐私保护指引</string>
+    <string name="string_to_login">立即登录</string>
+    <string name="staring_close">关闭</string>
+
+
+    <string name="string_requesting">请求中…</string>
+    <string name="string_loading">加载中…</string>
+    <string name="string_uploading">上传中…</string>
+    <string name="string_insert_success">添加成功</string>
+
+    <string name="string_password_digits">~!@#$%^&amp;*():";',./\|[]{}?-=+_0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <string name="string_user_type">注册类型</string>
+    <string name="string_buyer">买家</string>
+    <string name="string_seller">卖家</string>
+
+
+    <string name="string_change_password_ing">正在修改密码…</string>
+    <string name="string_change_password_success">修改密码成功!</string>
+    <string name="string_change_password_fail">修改密码失败!</string>
+
+    <string name="string_insert_dynamic_ing">正在发布任务</string>
+    <string name="string_insert_dynamic_success">发布任务成功</string>
+    <string name="string_insert_dynamic_fail">发布任务失败</string>
+
+    <string name="string_register_ing">正在注册…</string>
+    <string name="string_register_success">注册成功!</string>
+    <string name="string_register_fail">注册失败!</string>
+
+    <string name="string_login_ing">正在登录…</string>
+    <string name="string_login_success">登录成功!</string>
+    <string name="string_login_fail">登录失败!</string>
+
+    <string name="string_login_out_ing">正在退出登录…</string>
+    <string name="string_login_out_success">退出登录成功!</string>
+    <string name="string_login_out_fail">退出登录失败!</string>
+    <string name="string_close_application">再按一次退出应用</string>
+
+
+</resources>
