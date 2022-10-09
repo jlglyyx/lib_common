@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="viewPager" type="id"/>
+    <item name="tabLayout" type="id"/>
+    <item name="recyclerView" type="id"/>
+    <item name="banner" type="id"/>
+    <item name="smartRefreshLayout" type="id"/>
+    <item name="fragmentContainerView" type="id"/>
+    <item name="commonToolBar" type="id"/>
+
+</resources>

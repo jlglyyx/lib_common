@@ -1,0 +1,36 @@
+pluginManagement {
+    repositories {
+
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven {url 'https://artifact.bytedance.com/repository/pangle'}
+        maven { url 'https://developer.huawei.com/repo/'}
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+
+        google()
+        mavenCentral()
+        maven {url 'https://artifact.bytedance.com/repository/pangle'}
+        maven { url 'https://developer.huawei.com/repo/'}
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+    }
+}
+rootProject.name = "Test111"
+include ':app'
+include ':lib_common'
+
+include ':apt-annotation'
+include ':apt-processor'
